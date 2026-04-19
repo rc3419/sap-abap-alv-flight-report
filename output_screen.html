@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>ALV Output - Z_FLIGHT_REVENUE_REPORT</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+  body { background: #ccc; padding: 20px; }
+  .window { border: 1px solid #999; border-radius: 2px; overflow: hidden; background: white; max-width: 820px; margin: auto; }
+  .sap-shell { background: #1669c1; padding: 6px 12px; display: flex; align-items: center; gap: 10px; }
+  .sap-logo { color: white; font-size: 13px; font-weight: bold; letter-spacing: 1px; }
+  .sap-title { color: #cde; font-size: 12px; }
+  .toolbar { background: #e8e8e8; border-bottom: 1px solid #bbb; padding: 4px 8px; display: flex; align-items: center; gap: 4px; }
+  .tb-btn { background: #f5f5f5; border: 1px solid #bbb; border-radius: 2px; padding: 2px 8px; font-size: 11px; color: #333; }
+  .tb-sep { width: 1px; height: 18px; background: #bbb; margin: 0 2px; }
+  .grid-header { background: #dbe5f5; display: grid; grid-template-columns: 90px 140px 80px 100px 100px 75px 95px 110px; border-bottom: 2px solid #6688cc; }
+  .grid-header div { font-size: 11px; font-weight: bold; color: #1a3a6e; padding: 5px 6px; border-right: 1px solid #b0c0e0; }
+  .row { display: grid; grid-template-columns: 90px 140px 80px 100px 100px 75px 95px 110px; border-bottom: 1px solid #ddd; }
+  .row.alt { background: #f0f5ff; }
+  .row div { font-size: 11px; color: #222; padding: 4px 6px; border-right: 1px solid #e0e0e0; }
+  .row div.num { text-align: right; }
+  .status-bar { background: #e8e8e8; border-top: 1px solid #bbb; padding: 3px 10px; font-size: 11px; color: #555; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="sap-shell">
+    <span class="sap-logo">SAP</span>
+    <span class="sap-title">Flight Revenue Analysis — Z_FLIGHT_REVENUE_REPORT</span>
+  </div>
+  <div class="toolbar">
+    <button class="tb-btn">Back</button>
+    <button class="tb-btn">Exit</button>
+    <div class="tb-sep"></div>
+    <button class="tb-btn">Sort Asc</button>
+    <button class="tb-btn">Sort Desc</button>
+    <button class="tb-btn">Filter</button>
+    <div class="tb-sep"></div>
+    <button class="tb-btn">Print</button>
+    <button class="tb-btn">Export</button>
+  </div>
+  <div class="grid-header">
+    <div>Airline Code</div><div>Airline Name</div><div>Flight No</div><div>Date</div>
+    <div>Ticket Price</div><div>Currency</div><div>Total Seats</div><div>Occupied Seats</div>
+  </div>
+  <div class="row"><div>AA</div><div>American Airlines</div><div>0017</div><div>12.03.2025</div><div class="num">442.00</div><div>USD</div><div class="num">385</div><div class="num">370</div></div>
+  <div class="row alt"><div>AA</div><div>American Airlines</div><div>0017</div><div>14.04.2025</div><div class="num">442.00</div><div>USD</div><div class="num">385</div><div class="num">350</div></div>
+  <div class="row"><div>DL</div><div>Delta Air Lines</div><div>0106</div><div>02.02.2025</div><div class="num">687.00</div><div>USD</div><div class="num">260</div><div class="num">212</div></div>
+  <div class="row alt"><div>DL</div><div>Delta Air Lines</div><div>0106</div><div>17.03.2025</div><div class="num">687.00</div><div>USD</div><div class="num">260</div><div class="num">256</div></div>
+  <div class="row"><div>LH</div><div>Lufthansa</div><div>0400</div><div>07.01.2025</div><div class="num">934.00</div><div>EUR</div><div class="num">330</div><div class="num">310</div></div>
+  <div class="row alt"><div>LH</div><div>Lufthansa</div><div>0400</div><div>22.02.2025</div><div class="num">934.00</div><div>EUR</div><div class="num">330</div><div class="num">298</div></div>
+  <div class="row"><div>SQ</div><div>Singapore Airlines</div><div>0002</div><div>10.01.2025</div><div class="num">1,205.00</div><div>SGD</div><div class="num">400</div><div class="num">388</div></div>
+  <div class="row alt"><div>SQ</div><div>Singapore Airlines</div><div>0002</div><div>25.03.2025</div><div class="num">1,205.00</div><div>SGD</div><div class="num">400</div><div class="num">376</div></div>
+  <div class="row"><div>UA</div><div>United Airlines</div><div>0941</div><div>18.02.2025</div><div class="num">512.00</div><div>USD</div><div class="num">300</div><div class="num">278</div></div>
+  <div class="row alt"><div>UA</div><div>United Airlines</div><div>0941</div><div>11.04.2025</div><div class="num">512.00</div><div>USD</div><div class="num">300</div><div class="num">265</div></div>
+  <div class="status-bar"><span>10 entries displayed</span><span>ALV Grid Control — REUSE_ALV_GRID_DISPLAY</span></div>
+</div>
+</body>
+</html>
