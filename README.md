@@ -43,14 +43,7 @@ An ABAP report that fetches and displays flight revenue data by joining the **SF
 7. Enter filter values on the selection screen (leave blank for all records)
 8. View results in the ALV Grid
 
-## Screenshots
-
-### Selection Screen
-![Selection Screen](selection_screen.png)
-
-### Output Screen
-![Output Screen](output_screen.png)
-
 ## Author
 
-[Your Name]
+Rajonna Choudhury
+23053419
